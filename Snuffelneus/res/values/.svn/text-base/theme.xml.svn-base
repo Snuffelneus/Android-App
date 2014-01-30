@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- the theme applied to the application or activity -->
+    <style name="CustomActionBarTheme"
+        parent="android:Theme.Holo.Light">
+        <item name="android:actionBarStyle">@style/MyActionBar</item>
+        <item name="android:actionBarTabStyle">@style/MyActionBarTabs</item>
+     <item name="android:actionBarTabTextStyle">@style/TabTextStyle</item> 
+      <!--  <item name="android:actionMenuTextColor">@color/actionbar_text</item> -->
+
+    </style>
+
+    <!-- general styles for the action bar -->
+    <style name="MyActionBar"
+        parent="android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
+        <item name="android:titleTextStyle">@style/TitleTextStyle</item>
+        <item name="android:background">#33b5e5</item>
+        <item name="android:backgroundStacked">#50b5e5</item>
+        <item name="android:backgroundSplit">#50b5e5</item>
+
+    </style>
+
+    <style name="MyActionBarTabs"
+           parent="android:style/Widget.Holo.Light.ActionBar.TabView">
+        <!-- tab indicator -->
+        <item name="android:background">@drawable/actionbar_tab_indicator</item>
+    </style>
+    
+    <!-- action bar title text -->
+    <style name="TitleTextStyle"
+        parent="android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:textColor">#fff</item>
+    </style>
+
+    <!-- action bar tab text -->
+    <style name="TabTextStyle"
+        parent="android:Widget.Holo.Light.ActionBar.TabText">
+        <item name="android:textColor">#F4DCB7</item>
+    </style>
+</resources>
